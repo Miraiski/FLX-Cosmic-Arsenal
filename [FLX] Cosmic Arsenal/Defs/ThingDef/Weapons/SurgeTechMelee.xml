@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+	<defName>Surge_Hamon</defName>
+	<label>Hamon</label>
+	<description>A warhammer attached with thrusters for more powerful strikes. It's strength can obliterate any weak armored enemies in a single swing.</description>
+	<graphicData>
+	<texPath>Things/WeaponMelee/Surge_Hamon</texPath>
+	<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Spacer</techLevel>
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>10.5</Mass>
+	</statBases>
+	<recipeMaker>
+		<researchPrerequisite>SurgeTech</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>13</Crafting>
+	</skillRequirements>
+	</recipeMaker>
+	<equippedAngleOffset>315</equippedAngleOffset>
+	<costList>
+		<Plasteel>50</Plasteel>
+		<Uranium>30</Uranium>
+		<ComponentSpacer>2</ComponentSpacer>
+	</costList>
+	<equippedStatOffsets>
+		<MoveSpeed>0.3</MoveSpeed>
+	</equippedStatOffsets>
+	<tools>
+		<li>
+		<label>Handle</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>16</power>
+		<cooldownTime>1.5</cooldownTime>
+		</li>
+		<li>
+			<label>Head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>40</power>
+			<cooldownTime>2</cooldownTime>
+			<armorPenetration>0.5</armorPenetration>
+			<extraMeleeDamages>
+				<li>
+				<def>Shock</def>
+				<amount>5</amount>
+				</li>
+				<li>
+				<def>EMP</def>
+				<amount>8</amount>
+				</li>
+			</extraMeleeDamages>
+		</li>
+	</tools>
+</ThingDef>
+
+</Defs>

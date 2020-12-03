@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<DamageDef>
+	<defName>Shock</defName>
+	<label>Shock</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<harmsHealth>true</harmsHealth>
+	<makesBlood>false</makesBlood>
+	<externalViolence>true</externalViolence>
+	<deathMessage>{0} has been shocked to death.</deathMessage>
+	<hediff>ElectricShock</hediff>
+	<armorCategory>Sharp</armorCategory>
+	<isRanged>true</isRanged>
+	<makesAnimalsFlee>true</makesAnimalsFlee>
+</DamageDef>
+
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<ResearchProjectDef>
+	<defName>BlazeTech</defName>
+	<label>Blaze Tech</label>
+	<tab>CA_Research</tab>
+	<techLevel>Spacer</techLevel>
+	<description>Allows you to assemble your own Blaze Tech Equipment</description>
+	<baseCost>3000</baseCost>
+	<prerequisites>
+		<li>Fabrication</li>
+	</prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+		<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>0</researchViewX>
+	<researchViewY>1</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+	<defName>SurgeTech</defName>
+	<label>Surge Tech</label>
+	<tab>CA_Research</tab>
+	<techLevel>Spacer</techLevel>
+	<description>Allows you to produce your own Surge Tech Equipment</description>
+	<baseCost>3000</baseCost>
+	<prerequisites>
+		<li>Fabrication</li>
+	</prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+		<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>0</researchViewX>
+	<researchViewY>2</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+	<defName>IceboundTech</defName>
+	<label>Icebound Tech</label>
+	<tab>CA_Research</tab>
+	<techLevel>Spacer</techLevel>
+	<description>Allows you to manufacture your own Icebound Tech Equipment</description>
+	<baseCost>3000</baseCost>
+	<prerequisites>
+		<li>Fabrication</li>
+	</prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+		<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>0</researchViewX>
+	<researchViewY>3</researchViewY>
+</ResearchProjectDef>
+</Defs>

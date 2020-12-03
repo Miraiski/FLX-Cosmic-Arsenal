@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<HediffDef Name="InjuryBase" Abstract="True">
+<hediffClass>Hediff_Injury</hediffClass>
+<tendable>true</tendable>
+<displayWound>true</displayWound>
+<labelNounPretty>{0} in the {1}</labelNounPretty>
+</HediffDef>
+
+<HediffDef ParentName="InjuryBase">
+<defName>ElectricShock</defName>
+<label>Electric Shock</label>
+<labelNoun>An electric shock</labelNoun>
+<description>An electric shock.</description>
+<comps>
+	<li Class="HediffCompProperties_TendDuration">
+		<labelTendedWell>bandaged</labelTendedWell>
+		<labelTendedWellInner>tended</labelTendedWellInner>
+		<labelSolidTendedWell>tended</labelSolidTendedWell>
+	</li>
+	<li Class="HediffCompProperties_GetsPermanent">
+		<permanentLabel>Electric burn scar</permanentLabel>
+	</li>
+</comps>
+<injuryProps>
+<painPerSeverity>0.020</painPerSeverity>
+<averagePainPerSeverityPermanent>0.005</averagePainPerSeverityPermanent>
+<canMerge>true</canMerge>
+<destroyedLabel>Burned off(Eletrical)</destroyedLabel>
+<destroyedOutLabel>Burned out(Eletrical)</destroyedOutLabel>
+</injuryProps>
+</HediffDef>
+
+
+</Defs> 

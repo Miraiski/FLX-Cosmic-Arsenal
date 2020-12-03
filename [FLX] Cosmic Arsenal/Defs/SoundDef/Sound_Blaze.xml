@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<SoundDef>
+<defName>Shot_Blaze</defName>
+<context>MapOnly</context>
+<eventNames/>
+<maxSimultaneous>1</maxSimultaneous>
+	<subSounds>
+		<li>
+			<grains>
+			<li Class= "AudioGrain_Folder">
+			<clipFolderPath>CA_RangedWeapon/CA_Blaze_Shot</clipFolderPath>
+		</li>
+			</grains>
+			<volumeRange>
+				<min>45.2941</min>
+				<max>45.2941</max>
+			</volumeRange>
+			<pitchRange>
+				<min>1.091765</min>
+				<max>1</max>
+			</pitchRange>
+			<sustainLoop>False</sustainLoop>
+		</li>
+	</subSounds>
+</SoundDef>
+
+<SoundDef>
+<defName>Interact_Blaze</defName>
+<context>MapOnly</context>
+<eventNames />
+<maxSimultaneous>1</maxSimultaneous>
+<subSounds>
+	<li>
+		<grains>
+		<li Class="AudioGrain_Clip">
+			<clipPath>CA_RangedWeapon/CA_Blaze_Interact</clipPath>
+	</li>
+	</grains>
+</li>
+</subSounds>
+</SoundDef>
+</Defs>

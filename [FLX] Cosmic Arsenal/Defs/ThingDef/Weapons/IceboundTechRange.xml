@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--ICEBOUND PISTOL-->
+<ThingDef ParentName="BaseBullet">
+		<defName>CA_Bullet_Icebound</defName>
+		<label>Icebound Shard</label>
+		<graphicData>
+			<texPath>Things/Projectile/IceboundProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Frostbite</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>65</speed>
+		</projectile>
+		</ThingDef>
+		
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CA_Gun_Icebound</defName>
+		<label>Icebound</label>
+		<description>A handgun capable of slowing targets.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/WeaponRanged/CA_Icebound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Blaze</soundInteract>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<statBases>
+			<Mass>1.7</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.3</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+			<WorkToMake>31000</WorkToMake>
+		</statBases>
+		<weaponTags>
+		<li>SpacerGun</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>IceboundTech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CA_Bullet_Icebound</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>18</range>
+				<soundCast>Shot_Blaze</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10.5</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		</ThingDef>
+
+<!--ICEBOUND SMG-->
+
+<ThingDef ParentName="BaseBullet">
+		<defName>CA_Bullet_Gelid</defName>
+		<label>Gelid Shard</label>
+		<graphicData>
+			<texPath>Things/Projectile/IceboundProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Frostbite</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		</ThingDef>
+		
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CA_Gun_Gelid</defName>
+		<label>Gelid</label>
+		<description>A handgun capable of slowing targets.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/WeaponRanged/CA_Icebound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Blaze</soundInteract>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<statBases>
+			<Mass>1.7</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<WorkToMake>32000</WorkToMake>
+		</statBases>
+		<weaponTags>
+		<li>SpacerGun</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>IceboundTech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CA_Bullet_Gelid</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>22</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_Blaze</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10.5</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		</ThingDef>
+		
+</Defs>
